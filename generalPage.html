@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>YouTubeChannelRatings</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="icon" href="file:///C:/Users/Akila/Desktop/website/favicon.ico" /> <!--FAVICON NOT WORKING-->
+</head> 
+
+<link rel="sytlesheet" href="main.css">
+
+<body>
+		<?php
+		require 'DB.php';
+		$db = DB::connect('mysql://akilaWebsite:alphacrack@localhost/youtubeChannelRatings');
+		if (DB::isError($db)) 
+			die("Can't connect: " . $db->getMessage( ));
+		$db->setErrorHandling(PEAR_ERROR_DIE);
+		$db->setFetchMode(DB_FETCHMODE_OBJECT);
+		$db->query("UPDATE visittrack SET website_visIts=website_visIts+1");
+		?>
+		
+<div id="big_wrapper">
+	
+	<div id="top_div">
+	</div>
+	
+	<div id="main_div">
+	</div>
+	
+	<div id="side_div">
+	</div>
+	
+	<div id="footer_div">
+	</div>
+	
+</div>
+</body>
+</html>

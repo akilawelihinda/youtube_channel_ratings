@@ -1,0 +1,4 @@
+<link rel="stylesheet" href="categoryMain.css">
+<footer id="the_footer">
+Copyright &copy 2013 YoutubeChannelRatings.com All rights reserved.
+</footer>
